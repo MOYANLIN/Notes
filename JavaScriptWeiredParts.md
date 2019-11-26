@@ -37,3 +37,48 @@ output:
 $ "func b is called"
 $ undefined
 ```
+
+### Function invocation and execution stack
+```
+function b(){
+}
+function a(){
+b()
+}
+a()
+```
+```
+execution stack:
+b()  //execution context
+--------------------------
+a()  //execution context
+--------------------------
+global execution context
+```
+
+### variable environment
+```
+function b(){
+var myvar;
+console.log(myvar)
+}
+function a(){
+b()
+var myvar=2
+console.log(myvar)
+}
+
+var myvar=1
+console.log(myvar)
+a()
+console.log(myvar)
+```
+
+```
+output:
+1(global execution context)
+2(function a execution context)
+undefined(function b execution context)
+1(global execution context)
+```
+
