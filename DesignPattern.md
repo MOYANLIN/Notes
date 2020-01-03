@@ -18,7 +18,7 @@
 - Strategy  
 ...
 
-#### Design Principles
+#### Design Principles(SOLID)
 - Single Responsibility Principle(SRP)  
  *separation of concern  
  Every class take only one kind of responsibility. For example, you create a journal class, the CRUD of journal is within
@@ -36,6 +36,21 @@ ISP splits large interfaces into smaller and more specific ones so that clients 
 A. High-level modules should not depend on low level modules, both should depend on abstractions. 
 B. Abstractions should not depend on details, details should depend on abstractions.   
 An object shouldn't control the creation of its dependencies, it should just advertise what dependency it needs and let the caller provide it. But it doesn't specify whether the dependency should be a concrete type or an interface.
+
+
+### gamma categoriazation
+- Creational Patterns  
+Deal with the creations(construction) of objects  
+Explicit(constructor) vs implicit(DI, reflection, etc)  
+Wholesale(single statement) vs piecewise(step-by-step)
+- Structural Patterns  
+Concerned with the structure(eg: class members)  
+Many patterns are wrappers that mimic the underlying class interface  
+Stree the importance of good api design  
+- Behavioral Patterns  
+They are all different, no central theme
+
+
 
 
 
