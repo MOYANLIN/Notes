@@ -51,6 +51,13 @@ Stree the importance of good api design
 They are all different, no central theme
 
 
+### Design Pattern
+- Builder  
+piecewise  
+- Factory  
+A component responsible solely for the wholesale(not piecewise) creation of objects
+
+
 
 
 
