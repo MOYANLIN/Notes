@@ -81,6 +81,33 @@ class Demo{
   }
 }
 ```
+- Singleton
+A component which is stantiated only once . 
+```
+class BasicSingleton{
+  private BasicSingleton(){};
+  private static final BasicSingleton INSTANCE = new BasicSingleton();
+  public static BasicSingleton getInstance()
+  {
+    return INSTANCE;
+  }
+  private int value;
+  public getValue(){
+    return value;
+  }
+  public setValue(value){
+    this.value=value;
+  }
+}
+
+class Demo{
+  public static void main(Strings[] args){
+    BasicSingleton singleton=BasicSingleton.getInstance();
+    
+  }
+}
+```
+
 
 
 
